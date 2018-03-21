@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <title>Log In Page for medical application</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="subject.jsp">
+            <div class="imgcontainer">
+              <img src="img_avatar2.png" alt="Avatar" class="avatar">
+            </div>
+            <i>Log In for Subject</i><br>
+            <label><b>Subject Username</b></label>
+            <input type="text" name="username" value="" />
+            
+            <label><b>Subject Password</b></label>
+            <input type="password" name="password" value="" />
+            <input type="hidden" name="op" value="login"/>
+            <input type="submit" value="Login" />
+            <input type="checkbox" checked="checked"> Remember me
+        </form>
+        <form action="subject.jsp">
+            <i>New? Create new Subject Account </i><br>
+            <label><b>Subject Username</b></label>
+            <input type="text" name="username" value="" />
+            
+            <label><b>Subject Password</b></label>
+            <input type="password" name="password" value="" />
+            <input type="hidden" name="op" value="createNewAccount" />
+            <input type="submit" value="CreateNewAccount">
+        </form>
+        <form action="researcher.jsp">
+            <i>Log In for Researcher</i><br>
+            <label><b>Researcher Username</b></label>
+            <input type="text" name="username" value="" />
+            
+            <label><b>Researcher Password</b></label>
+            <input type="password" name="password" value="" />
+            <input type="hidden" name="op" value="login"/>
+            <input type="submit" value="Login" />
+            <input type="checkbox" checked="checked"> Remember me
+        </form>
+        <form action="researcher.jsp">
+            <i>New? Create New Account for Researcher</i><br>
+            <label><b>Researcher Username</b></label>
+            <input type="text" name="username" value="" />
+            
+            <label><b>Researcher Password</b></label>
+            <input type="password" name="password" value="" />
+            <input type="checkbox" checked="checked"> Remember me
+            <input type="hidden" name="op" value="createNewAccount" />
+            <input type="submit" value="CreateNewAccount">
+        </form>
+        <form>
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" class="cancelbtn">Cancel</button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+    </body>
+</html>
